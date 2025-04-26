@@ -1,7 +1,7 @@
 public class Task111 {
-    int number = 100;
+    static int number = 100;
 
     public static void main(String[] args){
-        System.out.print(number++);
+        System.out.print(number);
     }
 }
