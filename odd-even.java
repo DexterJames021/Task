@@ -7,7 +7,7 @@ class isOdd{
         
         if(number == 0){
             System.out.println(number + " is Zero");
-        }
+        } 
         else if(number < 0){
             System.out.println(number + " is a negative number");
         }
