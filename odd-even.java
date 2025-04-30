@@ -11,9 +11,6 @@ class isOdd{
         else if(number < 0){
             System.out.println(number + " is a negative number");
         }
-        else if(number > 0){
-            System.out.println(number + " is a negative number");
-        }
         else if(number % 2 == 0){
             System.out.println(number + " is Even");
 
