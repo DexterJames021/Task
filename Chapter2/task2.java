@@ -1,0 +1,14 @@
+package Chapter2;
+
+public class task2 {
+    static public void main(String[] args){
+        byte a = 0;
+        short b = 1;
+        int c = 9;
+        boolean d = true;
+
+        String output = "He"+b+b+a+" Worl"+c+"!." + d;
+
+        System.out.println(output);
+    }
+}
