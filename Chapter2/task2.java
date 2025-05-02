@@ -6,8 +6,9 @@ public class task2 {
         short b = 1;
         int c = 9;
         boolean d = true;
+        char e = '!';
 
-        String output = "He"+b+b+a+" Worl"+c+"!." + d;
+        String output = "He"+b+b+a+" Worl"+c+ e +"." + d;
 
         System.out.println(output);
     }
