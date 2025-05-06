@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class stringBuilderPalindrome {
+    // task 4
     public static void main(String[] args) {
         Scanner word = new Scanner(System.in);
         String str = word.nextLine();
