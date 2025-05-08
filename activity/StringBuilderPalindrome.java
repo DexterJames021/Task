@@ -1,6 +1,7 @@
+package activity; 
 import java.util.Scanner;
 
-public class stringBuilderPalindrome {
+public class StringBuilderPalindrome {
     // task 4
     public static void main(String[] args) {
         Scanner word = new Scanner(System.in);

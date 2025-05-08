@@ -1,3 +1,5 @@
+package activity;
+
 import java.util.*;
 class isOdd{
     public static void main(String[] args){

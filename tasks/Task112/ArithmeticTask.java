@@ -1,6 +1,6 @@
-package Tasks;
+package tasks.Task112;
 
-public class Task112 {
+public class ArithmeticTask {
     public static void main (String[] args){
           
         int result = 1 + 2; // result is now 3
