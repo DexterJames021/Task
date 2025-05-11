@@ -12,7 +12,7 @@
 	<artifactId>debank</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>debank</name>
-	<description>banking application</description>
+	<description>backend banking application</description>
 	<url/>
 	<licenses>
 		<license/>
