@@ -1,4 +1,4 @@
-package activity;
+package onlineClass;
 
 import java.util.*;
 class isOdd{

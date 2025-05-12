@@ -1,4 +1,4 @@
-package chapter2;
+package onlineClass;
 
 public class task2 {
     static public void main(String[] args){

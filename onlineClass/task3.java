@@ -1,4 +1,4 @@
-package chapter2;
+package onlineClass;
 
 public class task3 {
     String a = "Dexter!";  
