@@ -1,4 +1,4 @@
-package tasks.Task111;
+package tasks.task111;
 /** 
  * The HelloWorldApp class implements an application that
  * simply prints "Hello World!" to standard output.

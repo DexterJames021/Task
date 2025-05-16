@@ -1,4 +1,4 @@
-package tasks.Task112;
+package tasks.task112;
 
 public class ArithmeticTask {
     public static void main (String[] args){
