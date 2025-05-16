@@ -35,5 +35,6 @@ public class task5 {
 
         int largest = getLargerInt();
         System.out.println("Largest number is: " + largest);
+        scan.close();
     }
 }
