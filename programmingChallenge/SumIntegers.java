@@ -21,8 +21,8 @@ public class SumIntegers {
         int IItem = operation.sum(numbers);
         System.out.println("The sum is: " + IItem + "(lambda function)");
 
-        // int total = Arrays.stream(numbers).sum();
-        // System.out.println("The sum is: " + total);
+        int total = Arrays.stream(numbers).sum();
+        System.out.println("The sum is: " + total);
     }
 }
 

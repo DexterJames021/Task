@@ -1,41 +1,23 @@
 package onlineClass;
 
 import java.util.Scanner;
+import static java.lang.Math.*;
 
 public class task9 {
-       public static int add(int x, int y) {
-        return x + y;
+    public int add(int x, int y) {
+        return addExact(x, y);
     }
 
-    public static int subtract(int x, int y) {
-        return x - y;
+    public int subtract(int x, int y) {
+        return subtractExact(x, y);
     }
 
-    public static int divide(int x, int y) {
-        return x / y;
+    public float divide(int x, int y) {
+        return floorDiv(x, y);
     }
 
-    public static int multiply(int x, int y) {
-        return x * y;
-    }
-
-    public static void computer(String operator, int number1, int number2) {
-        switch (operator) {
-            case "+":
-                System.out.println("Addition: " + add(number1, number2));
-                break;
-            case "*":
-                System.out.println("Multiply: " + multiply(number1, number2));
-                break;
-            case "-":
-                System.out.println("Subtract: " + subtract(number1, number2));
-                break;
-            case "/":
-                System.out.println("divide: " + divide(number1, number2));
-                break;
-            default:
-                System.out.println("Someting went wrong.");
-        }
+    public int multiply(int x, int y) {
+        return multiplyExact(x, y);
     }
 
     public static void main(String[] args) {
@@ -44,11 +26,13 @@ public class task9 {
         Integer number1 = input.nextInt();
         System.out.print("Second operand:");
         Integer number2 = input.nextInt();
-        System.out.print("Operator:");
-        String operator = input.next();
 
-        computer(operator, number1, number2);
+        task7 t = new task7();
 
+        System.out.println("add: " + t.add(number1, number2));
+        System.out.println("subtract: " + t.subtract(number1, number2));
+        System.out.println("divide: " + t.divide(number1, number2));
+        System.out.println("multiply: " + t.multiply(number1, number2));
 
         input.close();
     }
