@@ -18,10 +18,10 @@ public class task6 {
 
         // Your code goes here
         for (int i : numbers) {
-            BREAK_ON : if(i == 237)
+            if(i == 237)
                 break;
 
-            DISPLAY: if(i % 2 == 0)
+            if(i % 2 == 0)
                 System.out.println(i);
 
         }
