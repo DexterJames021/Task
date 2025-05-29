@@ -1,6 +1,9 @@
 {
     "spring-boot.ls.java.home": "",
     "java.configuration.runtimes": [
-        
-    ]
+        {
+            "name": "JavaSE-1.8",
+            "path": "/home/killua/Documents/OJT/jdk1.8.0_202"
+        },
+    ],
 }

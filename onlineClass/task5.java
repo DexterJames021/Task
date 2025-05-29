@@ -1,4 +1,4 @@
-package onlineClass;
+// package onlineClass;
 
 import java.util.ArrayList;
 import java.util.Scanner;
