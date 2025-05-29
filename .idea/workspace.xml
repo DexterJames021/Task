@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce5c611d-9dca-4b3d-a7cd-12bfbbf84850" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/javaIMPL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/debank/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/debank/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/debank/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/debank/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/debank/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/debank/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/src/main/java/com/app/debank/DebankApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/debank/src/main/java/com/app/debank/DebankApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/src/main/java/com/app/debank/entity/ECustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/debank/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/src/test/java/com/app/debank/DebankApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/debank/src/test/java/com/app/debank/DebankApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java.code-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/java.code-workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineClass/task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/onlineClass/task5.java" afterDir="false" />
-    </list>
+    <list default="true" id="ce5c611d-9dca-4b3d-a7cd-12bfbbf84850" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,10 +13,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2xjj4fBqn3VmvZgwiFlzKpT4aLv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,7 +27,8 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/killua/Documents/java/bankingApp/server"
   }
 }]]></component>
   <component name="TaskManager">
