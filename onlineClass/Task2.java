@@ -1,6 +1,6 @@
 package onlineClass;
 
-public class task2 {
+public class Task2 {
     static public void main(String[] args){
         byte a = 0;
         short b = 1;

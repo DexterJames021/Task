@@ -1,6 +1,6 @@
 package onlineClass;
 
-public class task3 {
+public class Task3 {
     String a = "Dexter!";  
     String b = a;
     String c = a + "!"; 
@@ -11,7 +11,7 @@ public class task3 {
     boolean b3 = !c.equals(a);
 
     public static void main(String[] args) {
-        task3 t = new task3();
+        Task3 t = new Task3();
 
         System.out.println("b1: " + t.b1);
         System.out.println("b2: " + t.b2);

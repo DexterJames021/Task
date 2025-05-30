@@ -3,7 +3,7 @@ package onlineClass;
 import java.util.Scanner;
 import static java.lang.Math.*;
 
-public class task9 {
+public class Task9 {
     public static int add(int x, int y) {
         return addExact(x, y);
     }

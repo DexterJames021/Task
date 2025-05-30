@@ -6,7 +6,7 @@ package onlineClass;
  * Don't print any numbers that come after 237 in the sequence.
  * 
 */
-public class task6 {
+public class Task6 {
     public static void main(String[] args) {
         int[] numbers = {
             951, 402, 984, 651, 360, 69, 408, 319, 601, 485, 980, 507, 725, 547, 544,

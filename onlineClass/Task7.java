@@ -2,7 +2,7 @@ package onlineClass;
 
 import java.util.Scanner;
 
-public class task7 {
+public class Task7 {
 
     public static int add(int x, int y) {
         return x + y;

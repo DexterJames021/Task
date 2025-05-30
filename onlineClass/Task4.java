@@ -1,7 +1,7 @@
 package onlineClass; 
 import java.util.Scanner;
 
-public class task4 {
+public class Task4 {
     // task 4
     public static void main(String[] args) {
         Scanner word = new Scanner(System.in);

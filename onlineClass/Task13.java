@@ -1,6 +1,6 @@
 package onlineClass;
 
-public class task13 {
+public class Task13 {
     public static void main(String[] args) {
         Car car1 = new Car("Toyota","Camry",2022,4);
         System.out.println(car1.displayDetails());

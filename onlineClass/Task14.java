@@ -1,6 +1,6 @@
 package onlineClass;
 
-public class task14 {
+public class Task14 {
 
     public static void main(String args[]) {
         B b = new B();

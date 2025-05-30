@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * chech which number is the largest in 3 inputs.
  */
-public class task5 {
+public class Task5 {
     static ArrayList<Integer> store = new ArrayList<>();
 
     static int getLargerInt() {

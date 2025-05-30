@@ -1,6 +1,6 @@
 package onlineClass;
 
-public class task8 {
+public class Task8 {
     public static void main(String[] args) {
         System.out.println(compute(1, 2, 4, 5));
     }
