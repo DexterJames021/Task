@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Vue 2 App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
+<div id="app">
+    <h1>{{ message }}</h1>
+</div>
 
+<script>
+    new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello from Vue 2!'
+      }
+    })
+</script>
 </body>
 </html>
