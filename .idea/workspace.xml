@@ -5,20 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce5c611d-9dca-4b3d-a7cd-12bfbbf84850" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/javaIMPL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/debank/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/debank/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/debank/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/debank/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/debank/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/debank/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/src/main/java/com/app/debank/DebankApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/debank/src/main/java/com/app/debank/DebankApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/src/main/java/com/app/debank/entity/ECustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/debank/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankingApp/server/debank/src/test/java/com/app/debank/DebankApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/debank/src/test/java/com/app/debank/DebankApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java.code-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/java.code-workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineClass/task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/onlineClass/task5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBC/JDBC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBC/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankingApp/DBank.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankingApp/DBank/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineClass/task16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JDBC/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankingApp/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankingApp/features.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankingApp/server.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankingApp/server/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/bankingApp/DBank/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankingApp/server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/bankingApp/DBank/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankingApp/server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bankingApp/DBank/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankingApp/server/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/bankingApp/DBank/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankingApp/server/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/bankingApp/DBank/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankingApp/server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankingApp/server/src/main/java/com/debank/server/ServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankingApp/server/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankingApp/server/src/test/java/com/debank/server/ServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debank/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debank/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debank/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debank/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debank/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debank/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bankingApp/DBank/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debank/src/main/java/com/app/debank/DebankApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankingApp/DBank/src/main/java/com/ciicc/DBank/DBankApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debank/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debank/src/test/java/com/app/debank/DebankApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankingApp/DBank/src/test/java/com/ciicc/DBank/DBankApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +44,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DexterJames021&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DexterJames021/Task.git&quot;,
+    &quot;accountId&quot;: &quot;8ca64600-c00e-46b6-b889-3c686bbfca03&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2xjj4fBqn3VmvZgwiFlzKpT4aLv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,12 +67,35 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/killua/Documents/java",
+    "onboarding.tips.debug.path": "/home/killua/Documents/JDBC/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="JDBC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ce5c611d-9dca-4b3d-a7cd-12bfbbf84850" name="Changes" comment="" />
@@ -54,5 +105,20 @@
       <updated>1748458186708</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initail bankapp" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/JDBC/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
