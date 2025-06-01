@@ -1,3 +1,6 @@
+#JAVA
+
+---
 # Banking App
 []()
 
@@ -17,9 +20,6 @@
 - JAVA SE 17
 - Spring framework
 - Docker
-
-### Testing
-- JUnit 5
 
 ### Entity
 ```sql
