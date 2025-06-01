@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard - De Bank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 50%, #a855f7 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+            border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+        }
+
+        .header .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .nav-link {
+            color: rgba(255,255,255,0.9) !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .header .nav-link:hover {
+            color: white !important;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
+
+        /* Main Container */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Balance Card */
+        .balance-card {
+            background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 50%, #a855f7 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+
+        .balance-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .balance-card::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            width: 100px;
+            height: 100px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+
+        .balance-card .welcome-text {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+
+        .balance-card .balance-amount {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 2;
+        }
+
+        .balance-card .account-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            position: relative;
+            z-index: 2;
+        }
+
+        .balance-card .account-number {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .balance-card .account-type {
+            background: rgba(255,255,255,0.2);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Services Grid */
+        .services-section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #e0e0e0;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #2d2d44 0%, #3a3a5c 100%);
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(139, 92, 246, 0.3);
+            border-color: rgba(168, 85, 247, 0.4);
+        }
+
+        .service-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+
+        .service-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .service-icon.deposit {
+            background: linear-gradient(135deg, #10b981, #059669);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+        }
+
+        .service-icon.withdraw {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .service-icon.transfer {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+        }
+
+        .service-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #e0e0e0;
+            margin: 0;
+        }
+
+        .service-arrow {
+            color: #8b5cf6;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-arrow {
+            transform: translateX(5px);
+        }
+
+        /* Custom Modal Styles */
+        .modal-content {
+            background: linear-gradient(135deg, #2d2d44 0%, #3a3a5c 100%);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 100%);
+            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 15px 15px 0 0;
+            color: white;
+        }
+
+        .modal-title {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .modal-title i {
+            margin-right: 0.5rem;
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .close {
+            color: white;
+            opacity: 0.8;
+            text-shadow: none;
+        }
+
+        .close:hover {
+            color: white;
+            opacity: 1;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            color: #b0b0b0;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control {
+            background: rgba(45, 45, 68, 0.8);
+            border: 2px solid rgba(139, 92, 246, 0.3);
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            color: #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            background: rgba(45, 45, 68, 1);
+            border-color: #8b5cf6;
+            box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.25);
+            color: #ffffff;
+        }
+
+        .form-control::placeholder {
+            color: #888;
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            border: none;
+            border-radius: 10px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            color: white;
+            width: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+        }
+
+        .btn-submit:hover {
+            background: linear-gradient(135deg, #7c3aed, #6d28d9);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(108, 117, 125, 0.8);
+            border: none;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(108, 117, 125, 1);
+        }
+
+        /* Error Message */
+        .error-message {
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.2);
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #2d2d44;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #7c3aed, #6d28d9);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 1rem;
+            }
+
+            .balance-card {
+                padding: 1.5rem;
+            }
+
+            .balance-amount {
+                font-size: 2rem !important;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card {
+                padding: 1rem;
+            }
+
+            .modal-body {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
+            }
+        }
+
+        .service-card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .service-card:nth-child(1) { animation-delay: 0.1s; }
+        .service-card:nth-child(2) { animation-delay: 0.2s; }
+        .service-card:nth-child(3) { animation-delay: 0.3s; }
+
+        .balance-card:hover {
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        /* Particle Effect */
+        .particle {
+            position: absolute;
+            background: rgba(139, 92, 246, 0.6);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.7;
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+                opacity: 1;
+            }
+        }
+
+        /* Navbar toggler for dark theme */
+        .navbar-toggler {
+            border-color: rgba(255,255,255,0.3);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Modal backdrop */
+        .modal-backdrop {
+            background-color: rgba(26, 26, 46, 0.8);
+        }
+    </style>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-university me-2"></i>
+                De Bank
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">
+                            <i class="fas fa-home me-1"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/transactions">
+                            <i class="fas fa-history me-1"></i> Transactions
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">
+                            <i class="fas fa-sign-out-alt me-1"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<div class="main-container">
+    <!-- Balance Card -->
+    <div class="balance-card">
+        <div class="welcome-text" th:text="'Welcome back, ' + ${account.username}"></div>
+        <div class="balance-amount" th:text="'$' + ${account.balance}"></div>
+        <div class="account-info">
+            <div>
+                <div class="account-number" th:text="'Account: ' + ${account.id}"></div>
+            </div>
+            <div class="account-type">Savings Account</div>
+        </div>
+        <!-- Floating particles -->
+        <div class="particle" style="width: 4px; height: 4px; top: 20%; left: 80%; animation-delay: 0s;"></div>
+        <div class="particle" style="width: 6px; height: 6px; top: 60%; left: 90%; animation-delay: 2s;"></div>
+        <div class="particle" style="width: 3px; height: 3px; top: 80%; left: 85%; animation-delay: 4s;"></div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services-section">
+        <h3 class="section-title">
+            <i class="fas fa-bolt me-2" style="color: #8b5cf6;"></i>
+            Services
+        </h3>
+        <div class="services-grid">
+            <!-- Deposit Card -->
+            <div class="service-card" data-toggle="modal" data-target="#depositModal">
+                <div class="service-header">
+                    <div class="service-info">
+                        <div class="service-icon deposit">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <h4 class="service-title">Deposit Money</h4>
+                    </div>
+                    <i class="fas fa-chevron-right service-arrow"></i>
+                </div>
+            </div>
+
+            <!-- Withdraw Card -->
+            <div class="service-card" data-toggle="modal" data-target="#withdrawModal">
+                <div class="service-header">
+                    <div class="service-info">
+                        <div class="service-icon withdraw">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                        <h4 class="service-title">Withdraw Money</h4>
+                    </div>
+                    <i class="fas fa-chevron-right service-arrow"></i>
+                </div>
+            </div>
+
+            <!-- Transfer Card -->
+            <div class="service-card" data-toggle="modal" data-target="#transferModal">
+                <div class="service-header">
+                    <div class="service-info">
+                        <div class="service-icon transfer">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h4 class="service-title">Transfer Money</h4>
+                    </div>
+                    <i class="fas fa-chevron-right service-arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Message -->
+    <div th:if="${error != null}" class="error-message">
+        <i class="fas fa-exclamation-triangle me-2"></i>
+        <span th:text="${error}"></span>
+    </div>
+</div>
+
+<!-- Deposit Modal -->
+<div class="modal fade" id="depositModal" tabindex="-1" role="dialog" aria-labelledby="depositModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="depositModalLabel">
+                    <i class="fas fa-plus"></i>
+                    Deposit Money
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="/deposit" id="depositForm">
+                    <div class="form-group">
+                        <label for="depositAmount">
+                            <i class="fas fa-dollar-sign me-1"></i>Amount
+                        </label>
+                        <input type="number" class="form-control" id="depositAmount" name="amount"
+                               placeholder="Enter amount to deposit" required min="1" step="0.01">
+                        <small class="form-text text-muted">Minimum deposit amount is $1.00</small>
+                    </div>
+                    <div class="modal-footer border-0 px-0 pb-0 ">
+                        <button type="submit" class="btn btn-submit">
+                            <i class="fas fa-check me-2"></i>Deposit Now
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Withdraw Modal -->
+<div class="modal fade" id="withdrawModal" tabindex="-1" role="dialog" aria-labelledby="withdrawModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="withdrawModalLabel">
+                    <i class="fas fa-minus"></i>
+                    Withdraw Money
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="/withdraw" id="withdrawForm">
+                    <div class="form-group">
+                        <label for="withdrawAmount">
+                            <i class="fas fa-dollar-sign me-1"></i>Amount
+                        </label>
+                        <input type="number" class="form-control" id="withdrawAmount" name="amount"
+                               placeholder="Enter amount to withdraw" required min="1" step="0.01">
+                        <small class="form-text text-muted">Available balance: <span th:text="'$' + ${account.balance}"></span></small>
+                    </div>
+                    <div class="modal-footer border-0 px-0 pb-0">
+                        <button type="submit" class="btn btn-submit">
+                            <i class="fas fa-check me-2"></i>Withdraw Now
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Transfer Modal -->
+<div class="modal fade" id="transferModal" tabindex="-1" role="dialog" aria-labelledby="transferModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="transferModalLabel">
+                    <i class="fas fa-exchange-alt"></i>
+                    Transfer Money
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="/transfer" id="transferForm">
+                    <div class="form-group">
+                        <label for="recipientUsername">
+                            <i class="fas fa-user me-1"></i>Recipient Username
+                        </label>
+                        <input type="text" class="form-control" id="recipientUsername" name="toUsername"
+                               placeholder="Enter recipient's username" required>
+                        <small class="form-text text-muted">Enter the exact username of the recipient</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="transferAmount">
+                            <i class="fas fa-dollar-sign me-1"></i>Amount
+                        </label>
+                        <input type="number" class="form-control" id="transferAmount" name="amount"
+                               placeholder="Enter amount to transfer" required min="1" step="0.01">
+                        <small class="form-text text-muted">Available balance: <span th:text="'$' + ${account.balance}"></span></small>
+                    </div>
+                    <div class="modal-footer border-0 px-0 pb-0">
+                        <button type="submit" class="btn btn-submit">
+                            <i class="fas fa-paper-plane me-2"></i>Transfer Now
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add loading state to buttons
+        $('form').on('submit', function() {
+            const btn = $(this).find('.btn-submit');
+            const originalText = btn.html();
+            btn.html('<i class="fas fa-spinner fa-spin me-2"></i>Processing...');
+            btn.prop('disabled', true);
+
+            // Re-enable button after 3 seconds (in case of errors)
+            setTimeout(function() {
+                btn.html(originalText);
+                btn.prop('disabled', false);
+            }, 3000);
+        });
+
+        // Clear form when modal is closed
+        $('.modal').on('hidden.bs.modal', function () {
+            $(this).find('form')[0].reset();
+            $(this).find('.btn-submit').html($(this).find('.btn-submit').data('original-text') || $(this).find('.btn-submit').html());
+            $(this).find('.btn-submit').prop('disabled', false);
+        });
+
+        // Store original button text
+        $('.btn-submit').each(function() {
+            $(this).data('original-text', $(this).html());
+        });
+
+        // Add floating particles animation
+        function createParticle() {
+            const balanceCard = document.querySelector('.balance-card');
+            if (balanceCard) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.width = Math.random() * 4 + 2 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+
+                balanceCard.appendChild(particle);
+
+                setTimeout(() => {
+                    if (particle.parentNode) {
+                        particle.remove();
+                    }
+                }, 6000);
+            }
+        }
+
+        // Create particles periodically
+        setInterval(createParticle, 3000);
+
+        // Add form validation
+        $('input[type="number"]').on('input', function() {
+            const value = parseFloat($(this).val());
+            const min = parseFloat($(this).attr('min'));
+
+            if (value < min) {
+                $(this).addClass('is-invalid');
+            } else {
+                $(this).removeClass('is-invalid');
+            }
+        });
+    });
+</script>
+</body>
+</html>
