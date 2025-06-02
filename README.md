@@ -1,7 +1,6 @@
 # JAVA
 
----
-# Banking App
+## Deployed Banking App 
 []()
 
 ### Demo Accounts
@@ -9,7 +8,7 @@
 - james 123
 
 ### Features:
-- User Authentication Login
+- Spring security user authentication login
 - Registration 
 - withdraw
 - deposit
