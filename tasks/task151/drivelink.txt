@@ -1,5 +1,1 @@
 https://drive.google.com/file/d/1M9fyubygquBCcGEqJfoh8ZhJpYY05yVN/view?usp=sharing
-
-or install vscode extention
-
-https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio
