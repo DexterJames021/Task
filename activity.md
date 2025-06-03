@@ -1,14 +1,14 @@
 # TODO ACTIVITY
+##### ✅ - Complete, ❌ - Not Complete
 
-- PRE-ASSESMENT:    (done)
-- BASIC:            (done)
-- COMMON MODULE 1:  (done)
-- COMMON MODULE 2:  (done)
-- CORE MODULE 1:    -  
-- CORE MODULE 2:    -
-- POST-ASSESMENT:   -
+- PRE-ASSESMENT:    ✅
+- BASIC:            ✅
+- COMMON MODULE 1:  ✅
+- COMMON MODULE 2:  ✅
+- CORE MODULE 1:    ❌
+- CORE MODULE 2:    ❌
+- POST-ASSESMENT:   ❌
 
----
 # CORE: MODULE 1 
 ### Apply Basics of Java language
     ✅: Writing Executable Java applications
@@ -68,24 +68,24 @@
     ✅: Interaction Design Diagrams
     ✅: UML Communication diagram
     ✅: Sequence diagram view
-    ❌: Self-Check 1-7-1
+    ✅: Self-Check 1-7-1
  
 
 ### Introduce Architectural Concepts and Architecture Tiers Diagrams
-    ❌: Architecture Tiers Diagrams
-    ❌: Self-Check 1-8-1
+    ✅: Architecture Tiers Diagrams
+    ✅: Self-Check 1-8-1
 
 ---
   
 ## Programming Challenge
 
-     ❌: Score to Grade F - A
+     ✅: Score to Grade F - A
      ✅: Number to month(1-12) and print number of days of that month
      ❌: Number to day of the week
      ✅: Odd or even? positive or negative? or zero?
      ✅: Sum of All integer Inputs
-     ✅: Integer input from the user and uses a for loop to generate following pattern
-     ❌: Multiplication Table 10x10
+     ❌: Integer input from the user and uses a for loop to generate following pattern
+     ✅: Multiplication Table 10x10
      ❌: String Methods
      ✅: Check vowels and consonants
      ❌: Count number of words in an input
