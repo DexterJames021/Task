@@ -81,7 +81,7 @@
 
      ✅: Score to Grade F - A
      ✅: Number to month(1-12) and print number of days of that month
-     ❌: Number to day of the week
+     ✅: Number to day of the week
      ✅: Odd or even? positive or negative? or zero?
      ✅: Sum of All integer Inputs
      ✅: Integer input from the user and uses a for loop to generate following pattern
@@ -90,7 +90,7 @@
      ✅: Check vowels and consonants
      ✅: Count number of words in an input
      ✅: StringBuilder - 10 characters
-     ❌: Sum and average of input array numbers
+     ✅: Sum and average of input array numbers
 
 ---
 
