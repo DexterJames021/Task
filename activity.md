@@ -84,12 +84,12 @@
      ❌: Number to day of the week
      ✅: Odd or even? positive or negative? or zero?
      ✅: Sum of All integer Inputs
-     ❌: Integer input from the user and uses a for loop to generate following pattern
+     ✅: Integer input from the user and uses a for loop to generate following pattern
      ✅: Multiplication Table 10x10
-     ❌: String Methods
+     ✅: String Methods
      ✅: Check vowels and consonants
-     ❌: Count number of words in an input
-     ❌: StringBuilder - 10 characters
+     ✅: Count number of words in an input
+     ✅: StringBuilder - 10 characters
      ❌: Sum and average of input array numbers
 
 ---
