@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce5c611d-9dca-4b3d-a7cd-12bfbbf84850" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PROJECT/debank/docker-build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankingApp/DBank/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankingApp/DBank/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankingApp/DBank/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debank/.idea/debank.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debank/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debank/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debank/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debank/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT/debank/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT/debank/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features.md" beforeDir="false" afterPath="$PROJECT_DIR$/features.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity.md" beforeDir="false" afterPath="$PROJECT_DIR$/activity.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/task121/DateTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/task121/MyDate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/task151/drivelink.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
