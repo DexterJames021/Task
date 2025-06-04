@@ -5,7 +5,15 @@ public class Task8 {
         System.out.println(compute(1, 2, 4, 5));
     }
 
-    public static int compute(int a,int b, int c, int d){
-     return a+b+c+d;   
+    public static int compute(int... nums) {
+        int totalOfTriangulars = 0;
+
+        for (int n : nums) {
+            int triangular = n * (n + 1) / 2;
+            System.out.println("Cumulative sum from 1 to " + n + " = " + triangular);
+            totalOfTriangulars += triangular;
+        }
+
+        return totalOfTriangulars;
     }
 }

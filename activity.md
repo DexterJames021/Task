@@ -5,7 +5,7 @@
 - BASIC:            ✅
 - COMMON MODULE 1:  ✅
 - COMMON MODULE 2:  ✅
-- CORE MODULE 1:    ❌
+- CORE MODULE 1:    ✅
 - CORE MODULE 2:    ❌
 - POST-ASSESMENT:   ❌
 
@@ -31,7 +31,7 @@
     ✅: Java Modifiers
     ✅: Java Encapsulation
     ✅: Self-Check 1-2-1
-    ✅: Task Sheet 1-2-2
+    ✅: Task Sheet 1-2-2 
  
 
 ### Work with Inheritance and Handling Exceptions
