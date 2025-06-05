@@ -7,7 +7,7 @@
 - COMMON MODULE 2:  ✅
 - CORE MODULE 1:    ✅
 - CORE MODULE 2:    ❌
-- POST-ASSESMENT:   ❌
+- POST-ASSESMENT:   ✅
 
 # CORE: MODULE 1 
 ### Apply Basics of Java language
