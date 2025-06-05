@@ -40,3 +40,6 @@ create table Transaction(
     created_at timestamp(),
 );
 ```
+
+---
+[ACTIVITIES](https://github.com/DexterJames021/java/blob/main/features.md)
