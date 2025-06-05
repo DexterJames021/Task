@@ -68,9 +68,3 @@ create table Transaction(
     created_at timestamp(),
 );
 ```
-
-### Spring boot themelyft 
-https://youtu.be/1qmcED2-FsY?si=qt8ZU7Hgzp_7-DQ2
-
-
----
