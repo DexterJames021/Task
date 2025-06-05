@@ -69,15 +69,6 @@ create table Transaction(
 );
 ```
 
-## Tutorials 
-
-### Dockerize Spring
-https://youtu.be/3SNKdr3f9Io?si=Iky06-KysptbBxJ9
-https://youtu.be/e3YERpG2rMs?si=p08p1XlJd5gGy08_
-
-### Kotlin 
-https://youtube.com/playlist?list=PLrzWQu7Ajpi2vZDT2eKCgJDu-EfJ7lTj_&si=I6sPlm6iF0gpPEI_
-
 ### Spring boot themelyft 
 https://youtu.be/1qmcED2-FsY?si=qt8ZU7Hgzp_7-DQ2
 
