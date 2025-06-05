@@ -42,4 +42,4 @@ create table Transaction(
 ```
 
 ---
-[ACTIVITIES](https://github.com/DexterJames021/java/blob/main/features.md)
+[ACTIVITIES](https://github.com/DexterJames021/java/blob/main/activity.md)
