@@ -16,9 +16,10 @@
 - Transaction
 
 ### Tech Stack
-- JAVA SE 17
+- JAVA SE17
 - Spring framework
 - Docker
+- Render
 
 ### Entity
 ```sql
