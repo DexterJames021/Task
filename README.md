@@ -1,7 +1,7 @@
 # JAVA
 
 ## Deployed Banking App 
-[https://java-lu7w.onrender.com/](debank)
+[Debank](https://java-lu7w.onrender.com/)
 
 ### Demo Accounts
 - dexter 123
