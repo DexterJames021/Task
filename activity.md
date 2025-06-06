@@ -127,61 +127,62 @@
     Access modifiers with Java Framework Book
     Virtual method invocation Book
 
-    ❌: Self-Check 2-1-1
+    ✅: Self-Check 2-1-1
     ❌: Job Sheet 2-1
  
  
 
 ## Apply Java Advanced Class Design and Object Oriented Design Principles
 
-    ❌: Object Oriented Design Principles with Java framework
-    ❌: Self-Check 2-2-1
-    ❌: Generics and Collections Principles with Java framework
+    Object Oriented Design Principles with Java framework
+    ✅: Self-Check 2-2-1
+    
+    Generics and Collections Principles with Java framework
     ❌: Job Sheet 2-2
 
 
 ## Apply String Processing, Exceptions and Assertions
 
-    ❌: String API with Java framework
-    ❌: Custom Exception in Java Framework
-    ❌: Java Framework Invariants Assertions
-    ❌: Self-Check 2-3-1
+    String API with Java framework
+    Custom Exception in Java Framework
+    Java Framework Invariants Assertions
+    ✅: Self-Check 2-3-1
     ❌: Job Sheet 2-3
 
      
 ## Build Database Applications with JDBC
 
-    ❌: JDBC API
-    ❌: JDBC driver
-    ❌: Self-Check 2-4-1
+    JDBC API
+    JDBC driver
+    ✅: Self-Check 2-4-1
     ❌: Job Sheet 2-4
 
 
 ## Monitor Operating System Performance
 
-    ❌: JConsole to Monitor Applications
-    ❌: Garbage Collection Tuning
-    ❌: Self-Check 2-5-1
+    JConsole to Monitor Applications
+    Garbage Collection Tuning
+    ✅: Self-Check 2-5-1
     ❌: Job Sheet 2-5
 
 
 ## Work with Language Level Concerns and Garbage Collection
 
-    ❌: Garbage Collection Algorithms
-    ❌: Types of Garbage Collectors
-    ❌: JVM Ergonomics
-    ❌: Garbage Collection Output
-    ❌: Self-Check 2-6-1
+    Garbage Collection Algorithms
+    Types of Garbage Collectors
+    JVM Ergonomics
+    Garbage Collection Output
+    ✅: Self-Check 2-6-1
     ❌: Job Sheet 2-6
  
 
 ## Work with Performance Tuning at the Language Level
 
-    ❌: Reference Types
-    ❌: Finalizers
-    ❌: Collection Classes
-    ❌: Java Threads
-    ❌: Self-Check 2-7-1
+    Reference Types
+    Finalizers
+    Collection Classes
+    Java Threads
+    ✅: Self-Check 2-7-1
 
      
 ---
@@ -189,7 +190,7 @@
 
 # Institutional Post Assessment
 
-    ❌: Post Test
+❌: Post Test
     ❌: Job Sheet Post Assessment
 
     ❌: Portfolio assessment (Code Review)
