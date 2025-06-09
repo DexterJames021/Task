@@ -190,7 +190,7 @@
 
 # Institutional Post Assessment
 
-❌: Post Test
-    ❌: Job Sheet Post Assessment
+✅: Post Test
+    ✅: Job Sheet Post Assessment
 
     ❌: Portfolio assessment (Code Review)
